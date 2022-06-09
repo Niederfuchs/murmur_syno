@@ -60,8 +60,8 @@ RUN /mumble/scripts/clone.sh && /mumble/scripts/build.sh
 
 
 FROM base
-ARG MUMBLE_UID=1000
-ARG MUMBLE_GID=1000
+ARG MUMBLE_UID=1026
+ARG MUMBLE_GID=100
 
 RUN groupadd --gid $MUMBLE_GID mumble && useradd --uid $MUMBLE_UID --gid $MUMBLE_GID mumble
 
